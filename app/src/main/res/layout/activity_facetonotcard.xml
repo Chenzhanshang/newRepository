@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FaceToNotCardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@color/colorTitle"
+        >
+
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+
+            android:layout_height="match_parent"
+            android:src="@drawable/home"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center_vertical|center"
+            android:text="人脸识别"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="#00857063"
+                android:src="@drawable/take_1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:gravity="center_horizontal">
+
+            <FrameLayout
+                android:id="@+id/face"
+                android:layout_width="661dp"
+                android:layout_height="501dp"
+                android:background="@drawable/face_border" />
+
+        </LinearLayout>
+
+  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/toRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="未注册？"
+                android:textSize="36px"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

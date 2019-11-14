@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaceToHaveCardActivity"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@color/colorTitle"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"
+            android:src="@drawable/home"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="match_parent"
+            android:text="访客登记"
+            android:textSize="35sp"
+            android:gravity="center_vertical|center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:id="@+id/surface_frame"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="拍照预览"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="340dp"
+                    android:layout_height="255dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="最终效果"
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.33"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            >
+
+            <ImageButton
+                android:id="@+id/reback"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:textSize="22sp"
+                android:background="#00857063"
+                android:src="@drawable/back"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/take_photo"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:background="#00857063"
+                android:src="@drawable/take_photo"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.33"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            >
+
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:textSize="22sp"
+                android:background="#00857063"
+                android:src="@drawable/next"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

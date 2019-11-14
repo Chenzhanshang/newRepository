@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@color/colorBack"
+    tools:context=".EntertainmentActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@color/colorTitle"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"
+            android:src="@drawable/home"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="match_parent"
+            android:text="有问必答"
+            android:textSize="22sp"
+            android:gravity="center_vertical|center"
+            />
+
+    </LinearLayout>
+
+
+    <com.example.camera_system.utils.MyScrollView
+        android:id="@+id/sv_co"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.9">
+
+        <LinearLayout
+            android:id="@+id/contentViewCon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+    </com.example.camera_system.utils.MyScrollView>
+
+
+</LinearLayout>

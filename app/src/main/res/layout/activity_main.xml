@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/main"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.78" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="0dp"
+            android:layout_weight="0.33"
+            android:layout_height="90dp"
+            android:textSize="22sp"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/question"
+            android:layout_width="0dp"
+            android:layout_weight="0.33"
+            android:layout_height="90dp"
+            android:textSize="22sp"
+            android:layout_marginLeft="5dp"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/consume"
+            android:layout_width="0dp"
+            android:layout_weight="0.33"
+            android:layout_height="90dp"
+            android:textSize="22sp"
+            android:layout_marginLeft="5dp"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

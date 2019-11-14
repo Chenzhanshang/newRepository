@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@color/colorTitle"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"
+            android:src="@drawable/home"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="#00857063"
+            android:gravity="center_vertical|center"
+            android:text="访客登记"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/id_image"
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:src="@drawable/people" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical|right">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/name" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center|right"
+                    android:paddingRight="15dp"
+                    android:text="姓    名："
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:text="未识别到身份证"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical|right">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/sex" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent"
+                    android:text="性    别："
+                    android:textSize="22sp"
+                    android:gravity="center|right"
+                    android:paddingRight="22sp"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="center_vertical"
+                    android:text="未识别"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical|right">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/nationality" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="match_parent"
+                    android:text="民    族："
+                    android:textSize="22sp"
+                    android:gravity="center|right"
+                    android:paddingRight="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/nationality"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:gravity="center_vertical"
+                    android:text="未识别"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical|right">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/brithday" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center|right"
+                    android:paddingRight="15dp"
+                    android:text="出生日期："
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/birthday"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:text="未识别到身份证"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical|right">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/address" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center|right"
+                    android:paddingRight="15dp"
+                    android:text="地    址："
+                    android:textSize="22sp" />
+
+
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:text="未识别到身份证"
+
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical|right">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/id_card" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center|right"
+                    android:paddingRight="15dp"
+                    android:text="身份证号："
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/idCard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:text="未识别到身份证"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            >
+
+
+            <Button
+                android:id="@+id/reback"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:textSize="22sp"
+                android:text="返回继续验证"
+                android:background="#00857063"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/nocard"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:textSize="22sp"
+                android:text="未带身份证"
+                android:background="#00857063"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/tovisit"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:textSize="22sp"
+                android:text="不注册去登记"
+                android:background="#00857063"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            >
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:textSize="22sp"
+                android:text="去注册"
+                android:background="#00857063"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
